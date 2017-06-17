@@ -78,7 +78,7 @@ theme_set(theme_bw(base_size=12,base_family='Times New Roman')+
             theme(panel.grid.major = element_blank(), 
                   panel.grid.minor = element_blank()))
 
-new.data<-data.frame(log.StatWeek=seq(24,35,1))
+new.data<-data.frame(log.StatWeek=seq(24,35,0.1))
 new.data<-log(new.data)
 #low run size data (prediction)
 prediction.low<-predict(A3, newdata=new.data, interval="prediction")

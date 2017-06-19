@@ -2,18 +2,34 @@
 title: "Results of the Trigger Run Sizes"
 author: "Sara Miller"
 date: "June 19, 2017"
-output: html_document
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
 ---
-
+```{r load, echo=FALSE}
+library(knitr)
+library(pander)
+library(tidyverse)
+library(lubridate)
+```
 # Background
 The trigger run sizes on the Scform sheet of the SFMM (Catch-CPUE) model were updated for the Tah for the Tahltan stock in the D-10641 and D-108 fishery.
 
 
 **Prior results (used in models from 2014-2016)**
-![](../figures/Prior_prop/D108.png)
-![](../figures/Prior_prop/D108_combine.png)
-![](../figures/Prior_prop/D10641.png)
-![](../figures/Prior_prop/D10641_combine.png)
+Data used from 1994 through 2013.Data through 2011 is SPA and data from 2012 on is GSI.
 
+![](../figures/Prior_prop/fitted_D108.png)
+![](../figures/Prior_prop/combined_D108.png)
+![](../figures/Prior_prop/fitted_D10641.png)
+![](../figures/Prior_prop/combined_D10641.png)
+![](../figures/Prior_prop/results.png)
 
+**Current results (used in models from 2017)**
 
+![](../figures/fitted_D108.png)
+![](../figures/combined_D108.png)
+![](../figures/fitted_D10641.png)
+![](../figures/combined_D10641.png)
+![](../figures/results.png)
